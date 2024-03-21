@@ -14,37 +14,78 @@ public class Plant {
     private double fullHigh;
     private boolean edible;
 
-    public Plant(){};
-    public void setName(String name){this.name = name;}
-    public void setLatinName(String latinName){this.latinName = latinName;}
-    public void setOneYear(boolean oneYear){this.oneYear = oneYear;}
-    public void setCcntinent(String continent){this.continent = continent;}
-    public void setFullHigh(double fullHigh){this.fullHigh = fullHigh;}
-    public void setEdible(boolean edible){this.edible = edible;}
-    public String getLatinName (){
+    public Plant() {
+    }
+
+    ;
+
+    public Plant(String name, String latinName, boolean oneYear, String continent,
+                 double fullHigh, boolean edible) {
+        this.name = name;
+        this.latinName = latinName;
+        this.oneYear = oneYear;
+        this.continent = continent;
+        this.fullHigh = fullHigh;
+        this.edible = edible;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLatinName(String latinName) {
+        this.latinName = latinName;
+    }
+
+    public void setOneYear(boolean oneYear) {
+        this.oneYear = oneYear;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+    public void setFullHigh(double fullHigh) {
+        this.fullHigh = fullHigh;
+    }
+
+    public void setEdible(boolean edible) {
+        this.edible = edible;
+    }
+
+    public String getLatinName() {
         return this.latinName;
     }
-    public String getName (){
+
+    public String getName() {
         return this.name;
     }
-    public boolean getOneYear (){
+
+    public boolean getOneYear() {
         return this.oneYear;
     }
-    public double getFullHigh (){
+
+    public double getFullHigh() {
         return this.fullHigh;
     }
-    public String getContinent (){
+
+    public String getContinent() {
         return this.continent;
     }
-    public boolean getEdible (){
+
+    public boolean getEdible() {
         return this.edible;
     }
 
-
-
-
-
-
+    @Override
+    public String toString() {
+        return this.name + " " +
+                this.latinName + " " +
+                this.oneYear + " " +
+                this.continent + " " +
+                this.fullHigh + " " +
+                this.edible;
+    }
 
 
 }
