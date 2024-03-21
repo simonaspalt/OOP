@@ -10,21 +10,35 @@ public class Plant {
     private String name;
     private String latinName;
     private boolean oneYear;
-    private String Continent;
+    private String continent;
     private double fullHigh;
     private boolean edible;
 
-
-
-
-
-
-
-
-
-
-
-
+    public Plant(){};
+    public void setName(String name){this.name = name;}
+    public void setLatinName(String latinName){this.latinName = latinName;}
+    public void setOneYear(boolean oneYear){this.oneYear = oneYear;}
+    public void setCcntinent(String continent){this.continent = continent;}
+    public void setFullHigh(double fullHigh){this.fullHigh = fullHigh;}
+    public void setEdible(boolean edible){this.edible = edible;}
+    public String getLatinName (){
+        return this.latinName;
+    }
+    public String getName (){
+        return this.name;
+    }
+    public boolean getOneYear (){
+        return this.oneYear;
+    }
+    public double getFullHigh (){
+        return this.fullHigh;
+    }
+    public String getContinent (){
+        return this.continent;
+    }
+    public boolean getEdible (){
+        return this.edible;
+    }
 
 
 
