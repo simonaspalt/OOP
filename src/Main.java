@@ -35,7 +35,7 @@ public class Main {
         books.add(book6);
 
         for (int i = 0; i < books.size(); i++) {
-            System.out.print(books.get(i).getTitle() + " " + books.get(i).getPages() + " pages " + books.get(i).getReleaeYear() + " released");
+            System.out.print(books.get(i).getTitle() + " " + books.get(i).getPages() + " pages " + books.get(i).getReleaseYear() + " released");
             System.out.println();
         }
 //Sukurti klasę Plant
