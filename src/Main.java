@@ -49,18 +49,18 @@ public class Main {
         Plant plant1 = new Plant();
         plant1.setName("Cannabis");
         plant1.setLatinName("Cannabis Indica");
-        plant1.setOneYear(false);
+        plant1.setisAnnual(false);
         plant1.setContinent("Asia");
         plant1.setFullHigh(3.6576);
-        plant1.setEdible(true);
+        plant1.setisEdible(true);
 
         Plant plant2 = new Plant();
         plant2.setName("Aloe");
         plant2.setLatinName("Aloe Vera");
-        plant2.setOneYear(false);
+        plant2.setisAnnual(false);
         plant2.setContinent("Africa");
         plant2.setFullHigh(0.9);
-        plant2.setEdible(true);
+        plant2.setisEdible(true);
 
         Plant plant3= new Plant("Orchid", "Diuris carinata", false, "Australia", 0.8, false);
         Plant plant4 = new Plant("Clover", "Trifolium repens", true, "Europe and Asia", 0.18, true);
@@ -70,9 +70,10 @@ public class Main {
         plants.add(plant3);
         plants.add(plant4);
 
-        for (int i = 0; i < plants.size(); i++) {
-           System.out.println(plants.get(i).toString());
+        for (Plant plant: plants){
+            System.out.println(plant);
         }
+
 
 
 

@@ -9,24 +9,24 @@ public class Plant {
     //ar valgomas?
     private String name;
     private String latinName;
-    private boolean oneYear;
+    private boolean isAnnual;
     private String continent;
     private double fullHigh;
-    private boolean edible;
+    private boolean isEdible;
 
     public Plant() {
     }
 
     ;
 
-    public Plant(String name, String latinName, boolean oneYear, String continent,
-                 double fullHigh, boolean edible) {
+    public Plant(String name, String latinName, boolean isAnnual, String continent,
+                 double fullHigh, boolean isEdible) {
         this.name = name;
         this.latinName = latinName;
-        this.oneYear = oneYear;
+        this.isAnnual = isAnnual;
         this.continent = continent;
         this.fullHigh = fullHigh;
-        this.edible = edible;
+        this.isEdible = isEdible;
     }
 
     public void setName(String name) {
@@ -37,8 +37,8 @@ public class Plant {
         this.latinName = latinName;
     }
 
-    public void setOneYear(boolean oneYear) {
-        this.oneYear = oneYear;
+    public void setisAnnual(boolean oneYear) {
+        this.isAnnual = isAnnual;
     }
 
     public void setContinent(String continent) {
@@ -49,8 +49,8 @@ public class Plant {
         this.fullHigh = fullHigh;
     }
 
-    public void setEdible(boolean edible) {
-        this.edible = edible;
+    public void setisEdible(boolean edible) {
+        this.isEdible = isEdible;
     }
 
     public String getLatinName() {
@@ -61,8 +61,8 @@ public class Plant {
         return this.name;
     }
 
-    public boolean getOneYear() {
-        return this.oneYear;
+    public boolean getiAnnual() {
+        return this.isAnnual;
     }
 
     public double getFullHigh() {
@@ -73,18 +73,19 @@ public class Plant {
         return this.continent;
     }
 
-    public boolean getEdible() {
-        return this.edible;
+    public boolean getissEdible() {
+        return this.isEdible;
     }
+
 
     @Override
     public String toString() {
         return this.name + " " +
                 this.latinName + " " +
-                this.oneYear + " " +
+                (this.isAnnual ? "annual" : "not annual") + " " +
                 this.continent + " " +
                 this.fullHigh + " " +
-                this.edible;
+                (this.isEdible ? "edible" : "not edible");
     }
 
 
