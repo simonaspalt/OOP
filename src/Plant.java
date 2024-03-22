@@ -14,8 +14,7 @@ public class Plant {
     private double fullHigh;
     private boolean isEdible;
 
-    public Plant() {
-    }
+    public Plant() {}
 
     ;
 
@@ -37,7 +36,7 @@ public class Plant {
         this.latinName = latinName;
     }
 
-    public void setisAnnual(boolean oneYear) {
+    public void setIsAnnual(boolean isAnnual) {
         this.isAnnual = isAnnual;
     }
 
@@ -49,7 +48,7 @@ public class Plant {
         this.fullHigh = fullHigh;
     }
 
-    public void setisEdible(boolean edible) {
+    public void setIsEdible(boolean isEdible) {
         this.isEdible = isEdible;
     }
 
@@ -61,7 +60,7 @@ public class Plant {
         return this.name;
     }
 
-    public boolean getiAnnual() {
+    public boolean getIsAnnual() {
         return this.isAnnual;
     }
 
@@ -73,7 +72,7 @@ public class Plant {
         return this.continent;
     }
 
-    public boolean getissEdible() {
+    public boolean getIsEdible() {
         return this.isEdible;
     }
 
